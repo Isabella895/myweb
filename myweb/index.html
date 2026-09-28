@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isabella | Student Portfolio - Mulungushi University</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Isabella's Student Website</h1>
+    <p>Computer Science student at Mulungushi University, Zambia</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">My Hobbies</a>
+    <a href="#plan">My Learning Plan</a>
+    <a href="#photos">My Photos</a>
+    <a href="#media">My Media</a>
+    <a href="#contact">Contact</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener">MDN: Learn Web Development</a>
+  </nav>
+
+  <main>
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p>Hello, my name is Isabella and I study Computer Science at Mulungushi University. I enjoy solving problems, and I am learning how websites are built from the ground up. This course is teaching me how HTML gives a page its structure and how CSS makes it clear and pleasant to read. My goal is to build useful websites for real people, and one day to use those skills to earn an income online from Zambia.</p>
+    </section>
+
+    <section id="hobbies" class="content-section">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Crotcheting</li>
+        <li>Drawing</li>
+        <li>Litsening to music</li>
+      </ul>
+    </section>
+
+    <section id="plan" class="content-section">
+      <h2>My Learning Plan</h2>
+      <p>These are the steps I will take to improve my web skills:</p>
+      <ol>
+        <li>Finish the HTML and CSS lessons on MDN and rebuild each example myself.</li>
+        <li>Build one small project every two weeks and publish it on GitHub.</li>
+        <li>Learn JavaScript basics and add interactivity to my own website.</li>
+      </ol>
+      <table>
+        <caption>My weekly web learning plan</caption>
+        <thead>
+          <tr><th>Day</th><th>Topic</th><th>Practice task</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Monday</td><td>HTML structure</td><td>Rebuild a page using header, nav, main and footer</td></tr>
+          <tr><td>Wednesday</td><td>CSS layout</td><td>Make a photo gallery with CSS grid</td></tr>
+          <tr><td>Friday</td><td>Forms</td><td>Create a form with required fields</td></tr>
+          <tr><td>Saturday</td><td>Git and GitHub</td><td>Commit and push the week's work</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="photos" class="content-section">
+      <h2>My Photos</h2>
+      <h3>Gallery</h3>
+      <div class="gallery">
+        <figure>
+          <img src="images/photo1.jpg" alt="Isabella studying at a desk with a laptop">
+          <figcaption>random snapchat shot.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo2.jpg" alt="Football pitch during an evening match">
+          <figcaption>pick of me in my dorm </figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo3.jpg" alt="Open book on a table beside a cup of tea">
+          <figcaption>picture of me at home.</figcaption>
+        </figure>
+      </div>
+      <p><small>All photos were taken by me.</small></p>
+    </section>
+
+    <section id="media" class="content-section">
+      <h2>My Media</h2>
+      <h3>Video introduction</h3>
+      <video controls preload="metadata">
+        <source src="videos/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>A short video where I introduce myself.</p>
+      <p><strong>Summary of the video:</strong> I say my name and I say study Computer Science at Mulungushi University.</p>
+
+      <h3>Audio clip</h3>
+      <audio controls preload="metadata">
+        <source src="videos/voice.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+      <p>In this clip i talk more about my hobbies and web Technologies.</p>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <p class="note">This form is a browser demonstration only. It does not send any data anywhere.</p>
+      <form action="#" method="get">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+          <option>General question</option>
+          <option>Website feedback</option>
+          <option>Collaboration</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Isabella | ICT251 Web Technologies, Mulungushi University</p>
+  </footer>
+</body>
+</html>
