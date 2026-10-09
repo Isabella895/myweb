@@ -5,21 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Isabella | Student Portfolio - Mulungushi University</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Isabella's Student Website</h1>
-    <p>Computer Science student at Mulungushi University, Zambia</p>
+  <header id="intro">
+    <h1>Isabella's Student Portfolio</h1>
+    <p class="programme">Computer Science student at Mulungushi University, Zambia</p>
+    <p>I am learning to build fast, accessible websites. Here you can find my story, my work, my photos and a way to reach me.</p>
+    <a class="button" href="#projects">View My Projects</a>
   </header>
 
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#hobbies">My Hobbies</a>
-    <a href="#plan">My Learning Plan</a>
-    <a href="#photos">My Photos</a>
-    <a href="#media">My Media</a>
-    <a href="#contact">Contact</a>
-    <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener">MDN: Learn Web Development</a>
+  <nav aria-label="Main navigation">
+    <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <div id="nav-links">
+      <a href="#about">About Me</a>
+      <a href="#hobbies">My Hobbies</a>
+      <a href="#plan">My Learning Plan</a>
+      <a href="#photos">My Photos</a>
+      <a href="#media">My Media</a>
+      <a href="#projects">Projects and Skills</a>
+      <a href="#calculator">Study Calculator</a>
+      <a href="#contact">Contact</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener">MDN: Learn Web Development</a>
+    </div>
+    <button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
   </nav>
 
   <main>
@@ -31,8 +40,8 @@
     <section id="hobbies" class="content-section">
       <h2>My Hobbies</h2>
       <ul>
-        <li>Crotcheting</li>
         <li>Drawing</li>
+        <li>Crotcheting</li>
         <li>Litsening to music</li>
       </ul>
     </section>
@@ -45,18 +54,18 @@
         <li>Build one small project every two weeks and publish it on GitHub.</li>
         <li>Learn JavaScript basics and add interactivity to my own website.</li>
       </ol>
-      <table>
-        <caption>My weekly web learning plan</caption>
-        <thead>
-          <tr><th>Day</th><th>Topic</th><th>Practice task</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Monday</td><td>HTML structure</td><td>Rebuild a page using header, nav, main and footer</td></tr>
-          <tr><td>Wednesday</td><td>CSS layout</td><td>Make a photo gallery with CSS grid</td></tr>
-          <tr><td>Friday</td><td>Forms</td><td>Create a form with required fields</td></tr>
-          <tr><td>Saturday</td><td>Git and GitHub</td><td>Commit and push the week's work</td></tr>
-        </tbody>
-      </table>
+      <div class="table-wrap">
+        <table>
+          <caption>My weekly web learning plan</caption>
+          <thead><tr><th>Day</th><th>Topic</th><th>Practice task</th></tr></thead>
+          <tbody>
+            <tr><td>Monday</td><td>HTML structure</td><td>Rebuild a page using header, nav, main and footer</td></tr>
+            <tr><td>Wednesday</td><td>CSS layout</td><td>Make a photo gallery with CSS grid</td></tr>
+            <tr><td>Friday</td><td>Forms</td><td>Create a form with required fields</td></tr>
+            <tr><td>Saturday</td><td>Git and GitHub</td><td>Commit and push the week's work</td></tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section id="photos" class="content-section">
@@ -64,16 +73,16 @@
       <h3>Gallery</h3>
       <div class="gallery">
         <figure>
-          <img src="images/photo1.jpg" alt="Isabella studying at a desk with a laptop">
-          <figcaption>random snapchat shot.</figcaption>
+          <img src="images/photo1.jpg" alt="random snapchat picture">
+          <figcaption>random snapchat picture.</figcaption>
         </figure>
         <figure>
-          <img src="images/photo2.jpg" alt="Football pitch during an evening match">
-          <figcaption>pick of me in my dorm </figcaption>
+          <img src="images/photo2.jpg" alt="picture of me in my room">
+          <figcaption>picture of me in my room.</figcaption>
         </figure>
         <figure>
-          <img src="images/photo3.jpg" alt="Open book on a table beside a cup of tea">
-          <figcaption>picture of me at home.</figcaption>
+          <img src="images/photo3.jpg" alt="picture of me in my dorm room">
+          <figcaption>picture of me in my dorm room.</figcaption>
         </figure>
       </div>
       <p><small>All photos were taken by me.</small></p>
@@ -87,25 +96,48 @@
         Your browser does not support the video tag.
       </video>
       <p>A short video where I introduce myself.</p>
-      <p><strong>Summary of the video:</strong> I say my name and I say study Computer Science at Mulungushi University.</p>
-
+      <p><strong>Summary of the video:</strong> I say my name, that I study Computer Science at Mulungushi University, and that the web skill I most want to learn is building responsive websites.</p>
       <h3>Audio clip</h3>
       <audio controls preload="metadata">
         <source src="videos/voice.mp3" type="audio/mpeg">
         Your browser does not support the audio tag.
       </audio>
-      <p>In this clip i talk more about my hobbies and web Technologies.</p>
+      <p>In this clip I talk more about my hobbies and web technologies.</p>
+    </section>
+
+    <section id="projects" class="content-section">
+      <h2>Projects and Skills</h2>
+      <p>Things I have learned so far in ICT251:</p>
+      <div class="cards">
+        <article class="card"><h3>Semantic HTML</h3><p>Structuring a page with header, nav, main, sections and footer, plus accessible images, tables and forms.</p></article>
+        <article class="card"><h3>Responsive CSS</h3><p>Styling with a colour palette, the box model, Grid and media queries so the site works on phones and computers.</p></article>
+        <article class="card"><h3>JavaScript basics</h3><p>Using events and the DOM to validate forms, switch themes and calculate study hours.</p></article>
+      </div>
+    </section>
+
+    <section id="calculator" class="content-section">
+      <h2>Study Hours Calculator</h2>
+      <form id="calc-form" novalidate>
+        <label for="hours">Planned hours per day</label>
+        <input type="text" id="hours" inputmode="decimal">
+        <label for="days">Study days per week (1 to 7)</label>
+        <input type="text" id="days" inputmode="numeric">
+        <button type="submit">Calculate weekly hours</button>
+      </form>
+      <p id="calc-result" role="status" aria-live="polite"></p>
     </section>
 
     <section id="contact" class="content-section">
       <h2>Contact</h2>
-      <p class="note">This form is a browser demonstration only. It does not send any data anywhere.</p>
-      <form action="#" method="get">
+      <p class="note"><strong>Browser demonstration only — no message is sent.</strong> The form checks your input and shows a preview on this page.</p>
+      <form id="contact-form" action="#" method="get" novalidate>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
+        <span class="error" id="name-error"></span>
 
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
+        <span class="error" id="email-error"></span>
 
         <label for="topic">Topic</label>
         <select id="topic" name="topic">
@@ -116,14 +148,17 @@
 
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
+        <span class="error" id="message-error"></span>
 
-        <button type="submit">Send message</button>
+        <button type="submit">Check my message</button>
       </form>
+      <div id="preview" role="status" aria-live="polite"></div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2026 Isabella | ICT251 Web Technologies, Mulungushi University</p>
+    <p><a href="https://github.com/Isabella895/myweb" target="_blank" rel="noopener">View Source on GitHub</a></p>
   </footer>
 </body>
 </html>
